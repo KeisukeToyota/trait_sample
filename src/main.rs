@@ -1,6 +1,6 @@
 use std::cmp::min;
 
-struct Robot<T> {
+struct Robot<T: BatteryAdapter> {
     battery: T,
     storage: i32,
 }
